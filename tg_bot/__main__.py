@@ -54,10 +54,10 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/qatarpapabot) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](t.me/pranaysamudrala) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](paypal.me/Qatarpapa), or [Monzo](monzo.me/Qatarpapa)."""
+There are two ways of paying him; [PayPal](paypal.me/ps), or [Monzo](monzo.me/ps)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -154,12 +154,11 @@ def start(bot: Bot, update: Update, args: List[str]):
                 PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
 
                 parse_mode=ParseMode.MARKDOWN, reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://t.me/meejack")],
-                     [InlineKeyboardButton(text="👥 Support Group", url="https://t.me/anymodapps"), InlineKeyboardButton(text="🔔 Update Channel", url="https://t.me/freepremiumaccount_s")],
-                     [InlineKeyboardButton(text="🎬 Telegram Channel", url="https://t.me/freepremiumaccount_s"), InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
+                    [[InlineKeyboardButton(text="🎉 Add me to your group", url="t.me/{}?startgroup=true".format(bot.username)),  InlineKeyboardButton(text="🤖 Make Own Admin Bot", url="https://t.me/pranaysamudrala")],
+                     [InlineKeyboardButton(text="🛠 Help", url="https://t.me/{}?start=help".format(bot.username)) ]]))
 
     else:
-        update.effective_message.reply_text("ചത്തിട്ടില്ലാ...")
+        update.effective_message.reply_text("PS Group Manager Bot")
 
 
 # for test purposes
