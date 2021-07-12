@@ -20,9 +20,8 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 PM_START_TEXT = """
 
 
-Hey {} ! My name is Qatar Papa- I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
+Hey {} ! My name is PS Group Manager Bot- I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-Join my channel to get information on all the latest updates.
 
 
 
